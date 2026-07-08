@@ -1,0 +1,16 @@
+/*
+Escriba un algoritmo que determine si un valor entero es par o impar.
+*/
+ACCION parImpar ES
+    Ambiente
+        num:Entero
+    Proceso
+        EScribir("Ingrese un número entero:")
+        LEER(num)
+        SI (num MOD 2) = 0 ENTONCES
+            ESCRIBIR("El número es par.")
+        SINO
+            ESCRIBIR("El número es impar.")
+        FIN_SI
+    FIN_PROCESO
+FIN_ACCION

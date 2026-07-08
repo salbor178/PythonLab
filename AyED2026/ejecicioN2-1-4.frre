@@ -1,0 +1,77 @@
+Accion Ej2.1.4 es
+    AMBIENTE
+    s1, s2, sal: secuencia de caracteres
+    PROCESO
+        Arr(s1); arr(s2); Crear(sal)
+        Avz(s1, v1); Avz(s2, v2)
+        MIENTRAS (NFDS(s1) Y NDFS(s2)) HACER
+            ESCRIBIR(sal1, v1); ESCRIBIR(sal2, v2)            
+            Avz(s1, v1); Avz(s2, v2)
+        FIN_MIENTRAS
+        Cerrar(sal);
+        Cerrar(s1);
+        Cerrar(s2);
+Fin_Accion
+
+
+Accion Ej2.1.4 es
+    AMBIENTE
+    s1, s2, sal: secuencia de caracteres
+    PROCESO
+        Arr(s1); arr(s2); Crear(sal)
+        Avz(s1, v1); Avz(s2, v2)
+        cont1 := 0; cont2 := 0; conts := 0
+        MIENTRAS (NFDS(s1) Y NDFS(s2)) HACER
+            ESCRIBIR(sal1, v1); ESCRIBIR(sal2, v2)            
+            Avz(s1, v1); Avz(s2, v2)
+            cont1 := cont1 + 1
+            conts := conts + 2
+        FIN_MIENTRAS
+        cont2 := cont1
+        MIENTRAS (NFDS(s1)) HACER
+            Avanzar(s1, v1)
+            cont1 := cont + 1
+        FIN_MIENTRAS
+        ESCRIBIR(cont1, cont2 conts)
+        Cerrar(sal); Cerrar(s1); Cerrar(s2);
+Fin_Accion
+
+
+/*  SUBSECUENCIAS:
+> PALABRA: sub conjunto de elementos consecutivos de una secuencia de caracter que comiena con un caracter distinto de ""
+(espacio en blanco) y finaliza con otro caracter "" (espacio en blanco) o alguna marca específica planteada en el problema.
+
+Ejemplo de Subsecuencia => (N O M B R E - 2 5 4 5 6 7 8 9 N O M B R E - 3 1 4 7 5 8 6 9 FDS)
+
+*/
+
+Accion NyDNI es
+    AMBIENTE
+        sec: secuencia de caracter
+        v: caracter
+        cont: entero
+    PROCESO
+        Arrancar(sec); Avanzar(sec, v)
+        cont := 1
+        ESCRIBIR('Nombre', cont)            
+        MIENTRAS (NDFS(sec)) HACER
+            ESCRIBIR(v)
+            avz(sec, v)
+        FIN_MIENTRAS
+        avz(sec, v)
+        esc('NDI', cont)
+        PARA i := 1 HASTA 8 HACER
+            ESCRIBIR(v)
+            avz(sec,v)            
+        FIN_PARA
+Fin_Accion
+
+
+/*  SECUENCIAS JERARQUICAS
+    
+    => SECUENCIA PRINCIPAL
+        => ORACION
+           => PALABRA
+
+*/
+

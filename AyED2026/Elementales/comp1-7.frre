@@ -1,0 +1,17 @@
+/*Se desea obtener una tabla con 5 valores de e^X, usando para ello la siguiente fórmula:
+
+e**x=1−(x/1)!+(x**2/2)!−(x**3/3)!+...+(x**20/20)!
+*/
+ACCION calcularExponencial ES
+    Ambiente
+        x: Real
+        resultado: Real
+    Proceso
+        ESCRIBIR("Ingrese el valor de x para calcular e^x:")
+        LEER(x)
+        resultado := 1.0
+        PARA n DESDE 1 HASTA 20 HACER
+            resultado := resultado + ((-1)**(n+1)) * ((x**n) / factorial(n))
+        FIN_PARA
+        ESCRIBIR("El valor de e^", x, " es aproximadamente: ", resultado)
+    FIN_PROCESO

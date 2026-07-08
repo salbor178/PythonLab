@@ -1,0 +1,19 @@
+Secuencia de ENTEROS >>> [20-41515164-1][20-12312312-3][20-32131234-1]
+
+ACCION ejecicio2.1.7 ES
+AMBIENTE
+    empleados, sal: secuencia de enteros
+    cuit: entero
+    vs: entero
+    //ceroatres = (0,1,2,3)
+PROCESO
+    Arr(empleados)
+    Avz(empleados, cuit)
+    Crear(sal)
+    Mientras CUIT <> 0 hacer
+        SI ((cuit DIV 10) MOD 10) < 4 ENTONCES // en ceroatres
+            ESCRIBIR(salida, cuit)
+        FIN_SI
+        avz(empleados, cuit)
+    Fin_Mientras
+Fin_Accion

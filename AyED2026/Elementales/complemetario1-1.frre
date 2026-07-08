@@ -1,0 +1,21 @@
+/* La Mutual del personal del Banco, a pedido de un socio canjea un plazo fijo, pagándole el capital inicial.
+ Luego, al cobrarse el plazo fijo, le paga los intereses, descontando los días correspondientes y $5 por gastos.
+ Se desea liquidar el pago de la diferencia entre el capital inicial y capital con intereses, sabiendo que
+  el interés es el 5% a 30 días y teniendo como datos el capital inicial, capital con intereses y los días de anticipo.*/
+
+    //Interés por dia = (5%)/(30dias) = 0,1666667% = 0,00166667
+    //Monto que se le resta al interes total por 30 dias + el cap Inicial = CapIni*cantDiasAnt*0,166667
+
+ACCION PlazoFijo ES
+    Ambiente
+        CapIni, liqui: Real
+        IntxDia = 0.00166667
+        dias: Entero
+    Proceso
+        ESCRIBIR("Ingrese Monto del Capital Inicial: ")
+        LEER(cap)
+        ESCRIBIR("Ingrese cantidad de dias anticipados: ")
+        LEER(DiasAnt)
+        liqui := (CapIni*1.05)-CapIni-5-(CapIni*dias*IntxDia)
+        ESCRIBIR("Se le debe abonar al cliente la suma de: $", liqui)
+FIN_ACCION

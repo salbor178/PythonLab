@@ -1,0 +1,28 @@
+CREAR(sec)
+ABRIR(sec)
+CERRAR(sec)
+/*----------------o-----------------------*/
+
+Accion Ej2.1.4 ES
+
+/*----------------o-----------------------*/
+
+ACCION EJ2.1.5 ES
+	AMBIENTE
+		socios,nosocios: secuencia de enteros
+		v, aux: enteros
+	PROCESO
+		Arr(socios)
+		Avz(socios,v)
+		Crear(nosocios)
+		aux:= v
+		Avz(socios,v)
+		MIENTRAS NoFDS
+			SI v-aux > 1 ENTONCES
+				PARA i := aux+1 a v-1 hacer
+					ESCRIBIR(nosocios, i)
+				Fin_Para
+			FIN_SI
+			aux := v
+			Avz(socios, v)
+		Fin_Mientras

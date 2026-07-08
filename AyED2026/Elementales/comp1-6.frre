@@ -1,0 +1,7 @@
+/*
+Las medidas de las tablas de surf, como invento norteamericano que son, se expresan en el sistema métrico anglosajón,
+es decir, en pies y en pulgadas. De esta manera si decimos que nuestra tabla es una 6’2” estaremos diciendo que su longitud es de 1,88 m.
+Escriba un algoritmo que calcule la longitud de una tabla en metros, conociendo la misma en formato anglosajón.
+Las equivalencias con nuestro sistema métrico serían las siguientes: 1 pie = 12 plg, 1 plg = 2,54 cm, 1 m = 100cm.
+*/
+ACCION convertirTabla ES
