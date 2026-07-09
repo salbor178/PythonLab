@@ -4,8 +4,8 @@
 **Integrantes:**  
 🐾 Albornoz Alejandro Sebastián — **Leg:** 30350  
 🐾 Bogado Sharon Tatiana — **Leg:** 30213  
-🐾 Korovaichuk Dilan Lautaro — **Leg:** XXXXX  
-🐾 Monzón Lourdes Antonella — **Leg:** XXXXX
+🐾 Korovaichuk Dilan Lautaro — **Leg:** 30439  
+🐾 Monzón Lourdes Antonella — **Leg:** 30399
 ---  
 ## Descripción  
 HuellitasAPP es una aplicación en Python que permite administrar turnos y servicios dentro de una veterinaria.  
