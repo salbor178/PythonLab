@@ -3,7 +3,7 @@
 **Materia:** [Algoritmos y Estructuras de Datos] - UTN FRRE  
 **Integrantes:**  
 🐾 Albornoz Alejandro Sebastián — **Leg:** 30350  
-🐾 Bogado Sharon Tatiana — **Leg:** XXXXX  
+🐾 Bogado Sharon Tatiana — **Leg:** 30213  
 🐾 Korovaichuk Dilan Lautaro — **Leg:** XXXXX  
 🐾 Monzón Lourdes Antonella — **Leg:** XXXXX
 ---  
